@@ -1,12 +1,5 @@
 <?php
-//$json = json_decode( file_get_contents("http://beta.yle.fi/api/ttvcontent/?a=NTdTkuPvJTJrBMEwL2Jd&p=478&c=true") );
-$json = json_decode( file_get_contents("http://beta.yle.fi/api/ttvcontent/?a=NTdTkuPvJTJrBMEwL2Jd&p=671&c=true") );
-#$json = json_decode( file_get_contents(__DIR__ . '/json/alkutilanne.json') ) ;
-#$json = json_decode( file_get_contents(__DIR__ . '/json/osa_kaynnissa_osa_ei.json') ) ;
-#$json = json_decode( file_get_contents(__DIR__ . '/json/osa_puoliajalla.json') ) ;
-#$json = json_decode( file_get_contents(__DIR__ . '/json/toinen_puoliaika.json') ) ;
-#$json = json_decode( file_get_contents(__DIR__ . '/json/yksi_paattynyt.json') ) ;
-#$json = json_decode( file_get_contents(__DIR__ . '/json/kaikki_paattynyt.json') ) ;
+$json = json_decode( file_get_contents("http://beta.yle.fi/api/ttvcontent/?a=API_KEY_HERE&p=671&c=true") );
 
 $page = $json->pages[0]->subpages[0]->content;
 // Printtaa jsonin content
