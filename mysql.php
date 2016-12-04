@@ -1,7 +1,7 @@
 <?php
 // Database
 $servername = "localhost";
-$username = "change";
+$username = "changeme";
 $password = "change";
 $dbname = "vakio";
 
